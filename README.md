@@ -31,10 +31,14 @@ Add validations to the Event model and show appropriate messages to the user whe
 
 #### You Will Know You Are Done When:
 
-1. Invalid Events are not created when the form is posted.
+1. Invalid events are not created when the form is posted.
 2. The user is informed for each failing validation.
-2. The form remains populated with the users input after posting.
-3. Bonus points if errors are presented near the invalid form field.
+3. The form remains populated with the users input after posting.
+4. Bonus points if errors are presented near the invalid form field.
+
+Remember, post routes should never directly render responses, and instead should
+redirect to get routes. You can use [flash messages](https://github.com/nakajima/rack-flash) to maintain state across routes in your controller.
+
 
 ###Release 1 : Validations on UI (optional)
 An even better practice is to guide the users input to follow the format your

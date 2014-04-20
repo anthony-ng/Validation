@@ -16,6 +16,7 @@ require 'active_record'
 require 'logger'
 
 require 'sinatra'
+require 'rack-flash'
 
 require 'erb'
 require 'bcrypt'
@@ -31,3 +32,5 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 
 # Set up the database and models
 require APP_ROOT.join('config', 'database')
+
+use Rack::Flash, :sweep => true
