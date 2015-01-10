@@ -23,6 +23,8 @@ gem 'rack-flash3'
 
 group :development, :test do
   gem 'rspec-html-matchers'
+  gem 'shoulda-matchers'
+  gem 'rack-test'
   gem 'faker'
   gem 'rspec'
 end
