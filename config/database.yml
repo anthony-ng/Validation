@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  database: portfolio_validations_development
+  pool: 5
+
+test:
+  adapter: postgresql
+  database: portfolio_validations_test
+  pool: 5

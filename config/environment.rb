@@ -16,6 +16,7 @@ require 'active_record'
 require 'logger'
 
 require 'sinatra'
+require 'rack-flash'
 
 require 'erb'
 require 'bcrypt'
@@ -23,7 +24,7 @@ require 'bcrypt'
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
-APP_NAME = APP_ROOT.basename.to_s
+APP_NAME = 'portfolio_validations'
 
 # Set up the controllers and helpers
 Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }
@@ -31,3 +32,5 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 
 # Set up the database and models
 require APP_ROOT.join('config', 'database')
+
+use Rack::Flash, :sweep => true
