@@ -49,3 +49,18 @@ Computers should serve people. Not the other way around.
 
 1. Modify the UI so a user is coerced into entering a valid date. Hint: Consider using a Datepicker.
 2. Modify the controller or model to be more flexible with the format of dates it accepts while still saving reasonable dates to the database. Hint: look into the rubygem Chronic.
+
+=======
+
+## Resources
+
+* [ActiveRecord validations][]
+* [Active record custom validations][custom validations]
+* [ActiveRecord's valid? &amp; invalid?][valid invalid]
+* [ActiveRecord's errors object][errors]
+
+[ActiveRecord validations]: http://guides.rubyonrails.org/active_record_validations.html.
+[custom validations]: http://guides.rubyonrails.org/active_record_validations.html#performing-custom-validations
+[valid invalid]: http://guides.rubyonrails.org/active_record_validations.html#valid-questionmark-and-invalid-questionmark
+[errors]: http://guides.rubyonrails.org/active_record_validations.html#validations-overview-errors
+
